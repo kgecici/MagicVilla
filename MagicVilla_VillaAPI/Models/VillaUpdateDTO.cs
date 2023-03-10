@@ -1,7 +1,6 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace MagicVilla_VillaAPI.model
+namespace MagicVilla_VillaAPI.Models
 {
 	public class VillaUpdateDTO
 	{
@@ -18,9 +17,9 @@ namespace MagicVilla_VillaAPI.model
         [Required]
         public int Sqft { get; set; }
         [Required]
-        public string ImageUrl { get; set; }
+        public string ImageUrl { get; set; } = String.Empty;
         [Required]
-        public string Amenity { get; set; }
+        public string Amenity { get; set; } = String.Empty;
     }
 }
 

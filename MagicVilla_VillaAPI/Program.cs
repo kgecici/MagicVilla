@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using MagicVilla_VillaAPI;
 using MagicVilla_VillaAPI.data;
+using MagicVilla_VillaAPI.Repository;
+using MagicVilla_VillaAPI.Repository.IRepostiory;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -17,6 +19,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>
 {
     option.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<IVillaRepository, VillaRepository>();
 
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 

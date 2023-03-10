@@ -1,5 +1,5 @@
 using AutoMapper;
-using MagicVilla_VillaAPI.model;
+using MagicVilla_VillaAPI.Models;
 
 namespace MagicVilla_VillaAPI;
 
