@@ -1,4 +1,5 @@
-﻿using MagicVilla_VillaAPI;
+﻿using AutoMapper;
+using MagicVilla_VillaAPI;
 using MagicVilla_VillaAPI.data;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -16,7 +17,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>
 {
     option.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
 builder.Services.AddAutoMapper(typeof(MappingConfig));
+
 builder.Services.AddControllers(option =>
         {
             // application/json haricinde birsey gelirse not accaptable donsun

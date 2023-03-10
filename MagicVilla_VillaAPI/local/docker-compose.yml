@@ -13,8 +13,8 @@ services:
       - POSTGRES_PASSWORD=abcd.1234
       - POSTGRES_DB=villadb
     volumes:
-      - '../../docker_volumes/postgresql/villadb:/var/lib/postgresql'
-      - '../../docker_volumes/postgresql/postgresql_data:/var/lib/postgresql/data'
+      - '../../../docker_volumes/postgresql/villadb:/var/lib/postgresql'
+      - '../../../docker_volumes/postgresql/postgresql_data:/var/lib/postgresql/data'
   adminer:
     image: adminer
     restart: always
