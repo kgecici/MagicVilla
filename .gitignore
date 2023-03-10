@@ -1,11 +1,6 @@
 # globs
 
-MagicVilla_VillaAPI/local/volumes/postgresql/**
-MagicVilla_VillaAPI/local/volumes/postgresql/postgresql_data/global/**
-
-**/volumes/**
-**/volumes/postgresql/**
-**/volumes/postgresql/postgresql_data/**
+**/[Dd]ebug/**
 
 Makefile.in
 *.userprefs
