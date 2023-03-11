@@ -13,6 +13,7 @@ namespace MagicVilla_VillaAPI.Models
         public int Sqft { get; set; }
         public string ImageUrl { get; set; } = String.Empty;
         public string Amenity { get; set; } = String.Empty;
+
     }
 }
 
